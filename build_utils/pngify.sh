@@ -1,5 +1,5 @@
 #/bin/bash
-rm /home/krasto/workspace/OGC/Pharmagc/UML/png/*png
+rm -rf /home/krasto/workspace/OGC/Pharmagc/UML/png/*
 for svg in /home/krasto/workspace/OGC/Pharmagc/UML/svg/*svg 
 do
   png=$(echo $svg | sed "s/svg/png/gi");
