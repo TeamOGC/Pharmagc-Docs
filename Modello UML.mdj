@@ -1624,8 +1624,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 146,
-									"top": -316,
+									"left": -110,
+									"top": -212,
 									"width": 10,
 									"height": 10
 								},
@@ -1640,8 +1640,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 146,
-									"top": -316,
+									"left": -110,
+									"top": -212,
 									"width": 10,
 									"height": 10
 								},
@@ -1656,8 +1656,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 146,
-									"top": -316,
+									"left": -110,
+									"top": -212,
 									"width": 10,
 									"height": 10
 								},
@@ -1672,8 +1672,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 146,
-									"top": -316,
+									"left": -110,
+									"top": -212,
 									"width": 10,
 									"height": 10
 								}
@@ -60898,9 +60898,9 @@
 										"$ref": "AAAAAAGA1l+utoBLLjU="
 									},
 									"font": "Arial;13;0",
-									"left": 71.27001953125,
+									"left": 72.72998046875,
 									"top": 13,
-									"width": 93.0537109375,
+									"width": 103.5908203125,
 									"height": 13,
 									"text": "Gestione Farmaci"
 								},
@@ -60913,7 +60913,7 @@
 									"font": "Arial;13;1",
 									"left": 53,
 									"top": 13,
-									"width": 13.27001953125,
+									"width": 14.72998046875,
 									"height": 13,
 									"text": "uc"
 								}
@@ -63399,9 +63399,9 @@
 											},
 											"font": "Arial;13;1",
 											"left": 475.5,
-											"top": 551.5,
+											"top": 545,
 											"width": 163,
-											"height": 13,
+											"height": 26,
 											"text": "Visualizza Ordini Farmacia",
 											"wordWrap": true
 										},
@@ -63435,9 +63435,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 470.5,
-									"top": 544.5,
+									"top": 538,
 									"width": 173,
-									"height": 25,
+									"height": 38,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGA1l+uuIDBj3k="
 									},
@@ -67898,7 +67898,7 @@
 									"font": "Arial;13;0",
 									"left": 483.5,
 									"top": 80.5,
-									"width": 170,
+									"width": 171.078125,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAGA1l+uuoGZMBY="
@@ -68715,6 +68715,277 @@
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAGA1l+uu4HDROo="
 							}
+						},
+						{
+							"_type": "UMLAssociationView",
+							"_id": "AAAAAAGA11nHK2HWb7k=",
+							"_parent": {
+								"$ref": "AAAAAAGA1l+uu4HFMgk="
+							},
+							"model": {
+								"$ref": "AAAAAAGA11nHKWHSuIs="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHK2HXvvg=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHSuIs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 772,
+									"top": 483,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHK2HY9QY=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHSuIs="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 772,
+									"top": 468,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHK2HZiCM=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHSuIs="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 772,
+									"top": 513,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHK2HaQSQ=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHTjJ8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 210,
+									"top": 447,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHK2Hb3nk=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHTjJ8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 213,
+									"top": 433,
+									"height": 13,
+									"alpha": 0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHLGHcTt4=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHTjJ8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 203,
+									"top": 474,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"edgePosition": 2
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHLGHdZ7g=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHUO3A="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 855,
+									"top": 500,
+									"height": 13,
+									"alpha": -0.5235987755982988,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHLGHe0gg=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHUO3A="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 842,
+									"top": 499,
+									"height": 13,
+									"alpha": -0.7853981633974483,
+									"distance": 40,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									}
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGA11nHLGHfhiw=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHUO3A="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 883,
+									"top": 503,
+									"height": 13,
+									"alpha": 0.5235987755982988,
+									"distance": 25,
+									"hostEdge": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									}
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAGA11nHLGHgBFk=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHTjJ8="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLQualifierCompartmentView",
+									"_id": "AAAAAAGA11nHLGHhtbM=",
+									"_parent": {
+										"$ref": "AAAAAAGA11nHK2HWb7k="
+									},
+									"model": {
+										"$ref": "AAAAAAGA11nHKWHUO3A="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGA1l+ut4Bkos8="
+							},
+							"tail": {
+								"$ref": "AAAAAAGA1l+utH/mjso="
+							},
+							"lineStyle": 3,
+							"points": "183:466;672:504;872:504;877:485",
+							"showVisibility": true,
+							"showProperty": false,
+							"nameLabel": {
+								"$ref": "AAAAAAGA11nHK2HXvvg="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGA11nHK2HY9QY="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGA11nHK2HZiCM="
+							},
+							"showEndOrder": "hide",
+							"tailRoleNameLabel": {
+								"$ref": "AAAAAAGA11nHK2HaQSQ="
+							},
+							"tailPropertyLabel": {
+								"$ref": "AAAAAAGA11nHK2Hb3nk="
+							},
+							"tailMultiplicityLabel": {
+								"$ref": "AAAAAAGA11nHLGHcTt4="
+							},
+							"headRoleNameLabel": {
+								"$ref": "AAAAAAGA11nHLGHdZ7g="
+							},
+							"headPropertyLabel": {
+								"$ref": "AAAAAAGA11nHLGHe0gg="
+							},
+							"headMultiplicityLabel": {
+								"$ref": "AAAAAAGA11nHLGHfhiw="
+							},
+							"tailQualifiersCompartment": {
+								"$ref": "AAAAAAGA11nHLGHgBFk="
+							},
+							"headQualifiersCompartment": {
+								"$ref": "AAAAAAGA11nHLGHhtbM="
+							}
 						}
 					]
 				},
@@ -68895,6 +69166,33 @@
 									"$ref": "AAAAAAGA1l+u1InmyIg="
 								}
 							}
+						},
+						{
+							"_type": "UMLAssociation",
+							"_id": "AAAAAAGA11nHKWHSuIs=",
+							"_parent": {
+								"$ref": "AAAAAAGA1l+uu4HZ9Mg="
+							},
+							"end1": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGA11nHKWHTjJ8=",
+								"_parent": {
+									"$ref": "AAAAAAGA11nHKWHSuIs="
+								},
+								"reference": {
+									"$ref": "AAAAAAGA1l+uu4HZ9Mg="
+								}
+							},
+							"end2": {
+								"_type": "UMLAssociationEnd",
+								"_id": "AAAAAAGA11nHKWHUO3A=",
+								"_parent": {
+									"$ref": "AAAAAAGA11nHKWHSuIs="
+								},
+								"reference": {
+									"$ref": "AAAAAAGA1l+ux4WwxzA="
+								}
+							}
 						}
 					]
 				},
@@ -69019,9 +69317,9 @@
 														"$ref": "AAAAAAGA1l+uu4Hkz+s="
 													},
 													"font": "Arial;13;0",
-													"left": 40.72998046875,
+													"left": 38.55908203125,
 													"top": 13,
-													"width": 73.95361328125,
+													"width": 69.94189453125,
 													"height": 13,
 													"text": "Carico Merci"
 												},
@@ -69034,7 +69332,7 @@
 													"font": "Arial;13;1",
 													"left": 21,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -73817,9 +74115,9 @@
 														"$ref": "AAAAAAGA1l+uv4Lcik4="
 													},
 													"font": "Arial;13;0",
-													"left": 227.578125,
+													"left": 226.11181640625,
 													"top": 229,
-													"width": 105.04443359375,
+													"width": 98.4619140625,
 													"height": 13,
 													"text": "LoopScaricoMerci"
 												},
@@ -73832,7 +74130,7 @@
 													"font": "Arial;13;1",
 													"left": 197,
 													"top": 229,
-													"width": 25.578125,
+													"width": 24.11181640625,
 													"height": 13,
 													"text": "loop"
 												},
@@ -73865,7 +74163,7 @@
 																	"font": "Arial;13;0",
 																	"left": 212,
 																	"top": 262,
-																	"width": 250.7197265625,
+																	"width": 232.83837890625,
 																	"height": 13,
 																	"text": "[Il Farmacista non clicca il bottone di uscita]"
 																}
@@ -73919,9 +74217,9 @@
 														"$ref": "AAAAAAGA1l+uv4LfLBY="
 													},
 													"font": "Arial;13;0",
-													"left": 192.72998046875,
+													"left": 190.55908203125,
 													"top": 13,
-													"width": 79.736328125,
+													"width": 74.27099609375,
 													"height": 13,
 													"text": "Scarico Merci"
 												},
@@ -73934,7 +74232,7 @@
 													"font": "Arial;13;1",
 													"left": 173,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -74556,9 +74854,9 @@
 														"$ref": "AAAAAAGA1l+uv4MIXeQ="
 													},
 													"font": "Arial;13;0",
-													"left": 237.07177734375,
+													"left": 235.61181640625,
 													"top": 549,
-													"width": 149.60498046875,
+													"width": 136.509765625,
 													"height": 13,
 													"text": "AvvisoEsaurimentoScorte"
 												},
@@ -74571,7 +74869,7 @@
 													"font": "Arial;13;1",
 													"left": 213,
 													"top": 549,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -74604,7 +74902,7 @@
 																	"font": "Arial;13;0",
 																	"left": 228,
 																	"top": 582,
-																	"width": 102.26708984375,
+																	"width": 95.41796875,
 																	"height": 13,
 																	"text": "[quantita < soglia]"
 																}
@@ -75486,9 +75784,9 @@
 														"$ref": "AAAAAAGA1l+uwINDz50="
 													},
 													"font": "Arial;13;0",
-													"left": 48.72998046875,
+													"left": 46.55908203125,
 													"top": 5,
-													"width": 94.919921875,
+													"width": 85.830078125,
 													"height": 13,
 													"text": "Ordina Farmaco"
 												},
@@ -75501,7 +75799,7 @@
 													"font": "Arial;13;1",
 													"left": 29,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -75535,7 +75833,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 101.07177734375,
+													"left": 99.61181640625,
 													"top": 973,
 													"width": 1,
 													"height": 13
@@ -75549,7 +75847,7 @@
 													"font": "Arial;13;1",
 													"left": 77,
 													"top": 973,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -75582,7 +75880,7 @@
 																	"font": "Arial;13;0",
 																	"left": 92,
 																	"top": 1006,
-																	"width": 261.58056640625,
+																	"width": 241.52197265625,
 																	"height": 13,
 																	"text": "[se i farmaci non sono disponibili nelle scorte]"
 																}
@@ -75637,7 +75935,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 120.72998046875,
+													"left": 119.99365234375,
 													"top": 1101,
 													"width": 1,
 													"height": 13
@@ -75651,7 +75949,7 @@
 													"font": "Arial;13;1",
 													"left": 101,
 													"top": 1101,
-													"width": 14.72998046875,
+													"width": 13.99365234375,
 													"height": 13,
 													"text": "alt"
 												},
@@ -75684,7 +75982,7 @@
 																	"font": "Arial;13;0",
 																	"left": 116,
 																	"top": 1134,
-																	"width": 270.2197265625,
+																	"width": 245.81298828125,
 																	"height": 13,
 																	"text": "[Il Farmacista vuole i farmaci nella stessa data]"
 																}
@@ -76359,7 +76657,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 61.07177734375,
+													"left": 59.61181640625,
 													"top": 197,
 													"width": 1,
 													"height": 13
@@ -76373,7 +76671,7 @@
 													"font": "Arial;13;1",
 													"left": 37,
 													"top": 197,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -76406,7 +76704,7 @@
 																	"font": "Arial;13;0",
 																	"left": 52,
 																	"top": 230,
-																	"width": 237.021484375,
+																	"width": 211.50390625,
 																	"height": 13,
 																	"text": "[se data di scandeza è inferiore a 2 mesi]"
 																}
@@ -77711,9 +78009,9 @@
 													},
 													"font": "Arial;13;0",
 													"left": 504,
-													"top": 704,
+													"top": 710,
 													"width": 83.0908203125,
-													"height": 65,
+													"height": 52,
 													"alpha": 1.508377828082992,
 													"distance": 32.0624390837628,
 													"hostEdge": {
@@ -79849,9 +80147,9 @@
 													},
 													"font": "Arial;13;0",
 													"left": 838,
-													"top": 1465,
+													"top": 1472,
 													"width": 307.8486328125,
-													"height": 26,
+													"height": 13,
 													"alpha": 1.5707963267948966,
 													"distance": 10,
 													"hostEdge": {
@@ -82155,7 +82453,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 293.07177734375,
+													"left": 291.61181640625,
 													"top": 1085,
 													"width": 1,
 													"height": 13
@@ -82169,7 +82467,7 @@
 													"font": "Arial;13;1",
 													"left": 269,
 													"top": 1085,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -82202,7 +82500,7 @@
 																	"font": "Arial;13;0",
 																	"left": 284,
 																	"top": 1118,
-																	"width": 229.2900390625,
+																	"width": 214.01123046875,
 																	"height": 13,
 																	"text": "[Sono passati 15 minuti dal inizioTimer ]"
 																}
@@ -82256,9 +82554,9 @@
 														"$ref": "AAAAAAGA1l+uxISrOnU="
 													},
 													"font": "Arial;13;0",
-													"left": 53.07177734375,
+													"left": 51.61181640625,
 													"top": 213,
-													"width": 89.1435546875,
+													"width": 84.763671875,
 													"height": 13,
 													"text": "ControlloOrario"
 												},
@@ -82271,7 +82569,7 @@
 													"font": "Arial;13;1",
 													"left": 29,
 													"top": 213,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -82304,7 +82602,7 @@
 																	"font": "Arial;13;0",
 																	"left": 44,
 																	"top": 246,
-																	"width": 87.4580078125,
+																	"width": 80.8818359375,
 																	"height": 13,
 																	"text": "[Sono le 20:00]"
 																}
@@ -82358,9 +82656,9 @@
 														"$ref": "AAAAAAGA1l+uxISxUl4="
 													},
 													"font": "Arial;13;0",
-													"left": 69.07177734375,
+													"left": 67.61181640625,
 													"top": 597,
-													"width": 105.03173828125,
+													"width": 97.73193359375,
 													"height": 13,
 													"text": "MerciNonCaricate"
 												},
@@ -82373,7 +82671,7 @@
 													"font": "Arial;13;1",
 													"left": 45,
 													"top": 597,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -82406,7 +82704,7 @@
 																	"font": "Arial;13;0",
 																	"left": 60,
 																	"top": 630,
-																	"width": 153.91162109375,
+																	"width": 144.396484375,
 																	"height": 13,
 																	"text": "[ci sono ordini non caricati]"
 																}
@@ -82461,7 +82759,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 355.578125,
+													"left": 354.11181640625,
 													"top": 1245,
 													"width": 1,
 													"height": 13
@@ -82475,7 +82773,7 @@
 													"font": "Arial;13;1",
 													"left": 325,
 													"top": 1245,
-													"width": 25.578125,
+													"width": 24.11181640625,
 													"height": 13,
 													"text": "loop"
 												},
@@ -82508,7 +82806,7 @@
 																	"font": "Arial;13;0",
 																	"left": 340,
 																	"top": 1278,
-																	"width": 101.15625,
+																	"width": 94.58642578125,
 																	"height": 13,
 																	"text": "[Per Ogni Ordine]"
 																}
@@ -82682,9 +82980,9 @@
 														"$ref": "AAAAAAGA1l+uxITBTkQ="
 													},
 													"font": "Arial;13;0",
-													"left": 40.72998046875,
+													"left": 38.55908203125,
 													"top": 5,
-													"width": 165.7216796875,
+													"width": 154.791015625,
 													"height": 13,
 													"text": "Controllo Caricamento Merci"
 												},
@@ -82697,7 +82995,7 @@
 													"font": "Arial;13;1",
 													"left": 21,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -85362,7 +85660,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 397.07177734375,
+													"left": 395.61181640625,
 													"top": 1309,
 													"width": 1,
 													"height": 13
@@ -85376,7 +85674,7 @@
 													"font": "Arial;13;1",
 													"left": 373,
 													"top": 1309,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -85409,7 +85707,7 @@
 																	"font": "Arial;13;0",
 																	"left": 388,
 																	"top": 1342,
-																	"width": 160.748046875,
+																	"width": 147.46875,
 																	"height": 13,
 																	"text": "[Se l'ordine non è completo]"
 																}
@@ -90399,7 +90697,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 163.578125,
+													"left": 162.11181640625,
 													"top": 269,
 													"width": 1,
 													"height": 13
@@ -90413,7 +90711,7 @@
 													"font": "Arial;13;1",
 													"left": 133,
 													"top": 269,
-													"width": 25.578125,
+													"width": 24.11181640625,
 													"height": 13,
 													"text": "loop"
 												},
@@ -90446,7 +90744,7 @@
 																	"font": "Arial;13;0",
 																	"left": 148,
 																	"top": 302,
-																	"width": 219.6923828125,
+																	"width": 206.86376953125,
 																	"height": 13,
 																	"text": "[finchè non vengono inseriti dati validi]"
 																}
@@ -90500,9 +90798,9 @@
 														"$ref": "AAAAAAGA1l+uyoab2Bk="
 													},
 													"font": "Arial;13;0",
-													"left": 136.72998046875,
+													"left": 134.55908203125,
 													"top": 5,
-													"width": 92.0380859375,
+													"width": 88.0009765625,
 													"height": 13,
 													"text": "Modifica Ordine"
 												},
@@ -90515,7 +90813,7 @@
 													"font": "Arial;13;1",
 													"left": 117,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -91934,9 +92232,9 @@
 													},
 													"font": "Arial;13;0",
 													"left": 1063,
-													"top": 375,
+													"top": 381,
 													"width": 210,
-													"height": 39,
+													"height": 26,
 													"alpha": -4.609307713038472,
 													"distance": 29.154759474226502,
 													"hostEdge": {
@@ -92043,7 +92341,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 229.07177734375,
+													"left": 227.61181640625,
 													"top": 485,
 													"width": 1,
 													"height": 13
@@ -92057,7 +92355,7 @@
 													"font": "Arial;13;1",
 													"left": 205,
 													"top": 485,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -92090,7 +92388,7 @@
 																	"font": "Arial;13;0",
 																	"left": 220,
 																	"top": 518,
-																	"width": 135.84619140625,
+																	"width": 129.96826171875,
 																	"height": 13,
 																	"text": "[farmaci non disponibili]"
 																}
@@ -92936,7 +93234,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 221.07177734375,
+													"left": 219.61181640625,
 													"top": 773,
 													"width": 1,
 													"height": 13
@@ -92950,7 +93248,7 @@
 													"font": "Arial;13;1",
 													"left": 197,
 													"top": 773,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -92983,7 +93281,7 @@
 																	"font": "Arial;13;0",
 																	"left": 212,
 																	"top": 806,
-																	"width": 550.6591796875,
+																	"width": 503.80078125,
 																	"height": 13,
 																	"text": "[(in attesa disponibilità E nuova data<data prima disponibilità) O (nuova data < data corrente-2)]"
 																}
@@ -94556,9 +94854,9 @@
 														"$ref": "AAAAAAGA1l+uzYeoLoA="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 13,
-													"width": 97.8271484375,
+													"width": 90.171875,
 													"height": 13,
 													"text": "Ordine Periodico"
 												},
@@ -94571,7 +94869,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -95409,7 +95707,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 53.07177734375,
+													"left": 51.61181640625,
 													"top": 213,
 													"width": 1,
 													"height": 13
@@ -95423,7 +95721,7 @@
 													"font": "Arial;13;1",
 													"left": 29,
 													"top": 213,
-													"width": 19.07177734375,
+													"width": 17.61181640625,
 													"height": 13,
 													"text": "opt"
 												},
@@ -95456,7 +95754,7 @@
 																	"font": "Arial;13;0",
 																	"left": 44,
 																	"top": 246,
-																	"width": 87.4580078125,
+																	"width": 80.8818359375,
 																	"height": 13,
 																	"text": "[Sono le 20:00]"
 																}
@@ -97096,9 +97394,9 @@
 														"$ref": "AAAAAAGA1l+uz4g2Xew="
 													},
 													"font": "Arial;13;0",
-													"left": 32.72998046875,
+													"left": 30.55908203125,
 													"top": 21,
-													"width": 90.578125,
+													"width": 80.041015625,
 													"height": 13,
 													"text": "Cerca Farmaco"
 												},
@@ -97111,7 +97409,7 @@
 													"font": "Arial;13;1",
 													"left": 13,
 													"top": 21,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -98420,9 +98718,9 @@
 													},
 													"font": "Arial;13;0",
 													"left": 407,
-													"top": 304,
+													"top": 311,
 													"width": 210.234375,
-													"height": 26,
+													"height": 13,
 													"alpha": 1.046000160954008,
 													"distance": 21.95449840010015,
 													"hostEdge": {
@@ -98643,9 +98941,9 @@
 													},
 													"font": "Arial;13;0",
 													"left": 870,
-													"top": 382,
+													"top": 389,
 													"width": 206.62255859375,
-													"height": 26,
+													"height": 13,
 													"alpha": -4.420932644622482,
 													"distance": 20.8806130178211,
 													"hostEdge": {
@@ -99321,9 +99619,9 @@
 													},
 													"font": "Arial;13;0",
 													"left": 960,
-													"top": 513,
+													"top": 519,
 													"width": 171,
-													"height": 39,
+													"height": 26,
 													"alpha": 1.5707958267948967,
 													"distance": 20,
 													"hostEdge": {
@@ -99654,7 +99952,7 @@
 													},
 													"visible": false,
 													"font": "Arial;13;0",
-													"left": 59.578125,
+													"left": 58.11181640625,
 													"top": 669,
 													"width": 1,
 													"height": 13
@@ -99668,7 +99966,7 @@
 													"font": "Arial;13;1",
 													"left": 29,
 													"top": 669,
-													"width": 25.578125,
+													"width": 24.11181640625,
 													"height": 13,
 													"text": "loop"
 												},
@@ -99701,7 +99999,7 @@
 																	"font": "Arial;13;0",
 																	"left": 44,
 																	"top": 702,
-																	"width": 196.5234375,
+																	"width": 182.6474609375,
 																	"height": 13,
 																	"text": "[per ogni farmaco in ListaFarmaci]"
 																}
