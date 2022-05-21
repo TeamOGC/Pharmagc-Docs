@@ -12,6 +12,7 @@ def deltree(target):
             deltree(abs_d)
             os.rmdir(abs_d)
         else:
+            if ".git" in d: continue
             os.remove(abs_d)
         
 def check_root_path(root_path: str) -> bool:
