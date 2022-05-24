@@ -1,103 +1,125 @@
-SET FOREIGN_KEY_CHECKS = 0;
-DROP TABLE IF EXISTS `Farmaco`;
-DROP TABLE IF EXISTS `Lotto`;
-DROP TABLE IF EXISTS `Collo`;
-DROP TABLE IF EXISTS `Ordine`;
-DROP TABLE IF EXISTS `Farmacia`;
-DROP TABLE IF EXISTS `ComposizioneOrdine`;
-DROP TABLE IF EXISTS `ProduzionePeriodica`;
-DROP TABLE IF EXISTS `OrdinePeriodico`;
-DROP TABLE IF EXISTS `Impiegato`;
-DROP TABLE IF EXISTS `Corriere`;
-SET FOREIGN_KEY_CHECKS = 1;
-
-CREATE TABLE `Farmaco` (
-    `id_farmaco` INTEGER NOT NULL,
-    `nome` VARCHAR NOT NULL,
-    `principio_attivo` VARCHAR NOT NULL,
-    `da_banco` BOOLEAN NOT NULL,
-    PRIMARY KEY (`id_farmaco`)
+set foreign_key_checks =0;
+create or replace table Corriere
+(
+    id_corriere int auto_increment          not null
+        primary key,
+    nome        varchar(255) not null,
+    cognome     varchar(255) not null,
+    email       varchar(255) not null,
+    password    varchar(255) not null
 );
 
-CREATE TABLE `Lotto` (
-    `id_lotto` INTEGER NOT NULL,
-    `id_farmaco` INTEGER NOT NULL,
-    `data_scadenza` DATE NOT NULL,
-    `data_disponibilità` DATE NOT NULL,
-    `quantità` INTEGER NOT NULL,
-    PRIMARY KEY (`id_lotto`)
+create or replace table Farmacia
+(
+    id_farmacia int auto_increment         not null
+        primary key,
+    nome        varchar(255) not null,
+    indirizzo   varchar(255) not null
 );
 
-CREATE TABLE `Collo` (
-    `id_farmacia` INTEGER NOT NULL,
-    `data_consegna` DATE NOT NULL,
-    PRIMARY KEY (`id_farmacia`, `data_consegna`)
+create or replace table Collo
+(
+    id_farmacia   int  not null,
+    data_consegna date not null,
+    primary key (id_farmacia, data_consegna),
+    constraint Collo_ibfk_1
+        foreign key (id_farmacia) references Farmacia (id_farmacia)
 );
 
-CREATE TABLE `Ordine` (
-    `id_ordine` INTEGER NOT NULL,
-    `id_farmaco` INTEGER NOT NULL,
-    `id_farmacia` INTEGER NOT NULL,
-    `data_consegna` DATE NOT NULL,
-    `quantità` INTEGER NOT NULL,
-    `stato` VARCHAR NOT NULL,
-    PRIMARY KEY (`id_ordine`)
+create or replace table Farmaco
+(
+    id_farmaco       int  auto_increment        not null
+        primary key,
+    nome             varchar(255) not null,
+    principio_attivo varchar(255) not null,
+    da_banco         tinyint(1)   not null
 );
 
-CREATE TABLE `Farmacia` (
-    `id_farmacia` INTEGER NOT NULL,
-    `nome` VARCHAR NOT NULL,
-    `indirizzo` VARCHAR NOT NULL,
-    PRIMARY KEY (`id_farmacia`)
+create or replace table Impiegato
+(
+    id_impiegato int  auto_increment         not null
+        primary key,
+    nome         varchar(255) not null,
+    cognome      varchar(255) not null,
+    email        varchar(255) not null,
+    password     varchar(255) not null
 );
 
-CREATE TABLE `ComposizioneOrdine` (
-    `id_ordine` INTEGER NOT NULL,
-    `id_lotto` INTEGER NOT NULL,
-    `quantità` INTEGER NOT NULL,
-    PRIMARY KEY (`id_ordine`, `id_lotto`)
+create or replace table Lotto
+(
+    id_lotto           int auto_increment  not null
+        primary key,
+    id_farmaco         int  not null,
+    data_scadenza      date not null,
+    data_disponibilita date not null,
+    quantita           int  not null,
+    constraint Lotto_ibfk_1
+        foreign key (id_farmaco) references Farmaco (id_farmaco)
 );
 
-CREATE TABLE `ProduzionePeriodica` (
-    `id_farmaco` INTEGER NOT NULL,
-    `quantità` INTEGER NOT NULL,
-    `giorni_scadenza` INTEGER NOT NULL,
-    `giorni_disponibilità` INTEGER NOT NULL,
-    `giorni_produzione` INTEGER NOT NULL,
-    PRIMARY KEY (`id_farmaco`)
+create or replace index id_farmaco
+    on Lotto (id_farmaco);
+
+create or replace table Ordine
+(
+    id_ordine     int  auto_increment        not null
+        primary key,
+    id_farmaco    int          not null,
+    id_farmacia   int          not null,
+    data_consegna date         not null,
+    quantita      int          not null,
+    stato         varchar(255) not null,
+    constraint Ordine_ibfk_1
+        foreign key (id_farmaco) references Farmaco (id_farmaco),
+    constraint Ordine_ibfk_2
+        foreign key (id_farmacia) references Farmacia (id_farmacia)
 );
 
-CREATE TABLE `OrdinePeriodico` (
-    `id_farmacia` INTEGER NOT NULL,
-    `id_farmaco` INTEGER NOT NULL,
-    `quantità` INTEGER NOT NULL,
-    PRIMARY KEY (`id_farmacia`, `id_farmaco`)
+create or replace table ComposizioneOrdine
+(
+    id_ordine int not null,
+    id_lotto  int not null,
+    quantita  int not null,
+    primary key (id_ordine, id_lotto),
+    constraint ComposizioneOrdine_ibfk_1
+        foreign key (id_lotto) references Lotto (id_lotto),
+    constraint ComposizioneOrdine_ibfk_2
+        foreign key (id_ordine) references Ordine (id_ordine)
 );
 
-CREATE TABLE `Impiegato` (
-    `id_impiegato` INTEGER NOT NULL,
-    `nome` VARCHAR NOT NULL,
-    `cognome` VARCHAR NOT NULL,
-    `email` VARCHAR NOT NULL,
-    `password` VARCHAR NOT NULL,
-    PRIMARY KEY (`id_impiegato`)
+create or replace index id_lotto
+    on ComposizioneOrdine (id_lotto);
+
+create or replace index id_farmacia
+    on Ordine (id_farmacia);
+
+create or replace index id_farmaco
+    on Ordine (id_farmaco);
+
+create or replace table OrdinePeriodico
+(
+    id_farmacia int not null,
+    id_farmaco  int not null,
+    quantita    int not null,
+    primary key (id_farmacia, id_farmaco),
+    constraint OrdinePeriodico_ibfk_1
+        foreign key (id_farmaco) references Farmaco (id_farmaco),
+    constraint OrdinePeriodico_ibfk_2
+        foreign key (id_farmacia) references Farmacia (id_farmacia)
 );
 
-CREATE TABLE `Corriere` (
-    `id_corriere` INTEGER NOT NULL,
-    `nome` VARCHAR NOT NULL,
-    `cognome` VARCHAR NOT NULL,
-    `email` VARCHAR NOT NULL,
-    `password` VARCHAR NOT NULL,
-    PRIMARY KEY (`id_corriere`)
-);
+create or replace index id_farmaco
+    on OrdinePeriodico (id_farmaco);
 
-ALTER TABLE `Lotto` ADD FOREIGN KEY (`id_farmaco`) REFERENCES `Farmaco`(`id_farmaco`);
-ALTER TABLE `Collo` ADD FOREIGN KEY (`id_farmacia`) REFERENCES `Farmacia`(`id_farmacia`);
-ALTER TABLE `Ordine` ADD FOREIGN KEY (`id_farmaco`) REFERENCES `Farmaco`(`id_farmaco`);
-ALTER TABLE `Ordine` ADD FOREIGN KEY (`id_farmacia`) REFERENCES `Farmacia`(`id_farmacia`);
-ALTER TABLE `ComposizioneOrdine` ADD FOREIGN KEY (`id_lotto`) REFERENCES `Lotto`(`id_lotto`);
-ALTER TABLE `ComposizioneOrdine` ADD FOREIGN KEY (`id_ordine`) REFERENCES `Ordine`(`id_ordine`);
-ALTER TABLE `ProduzionePeriodica` ADD FOREIGN KEY (`id_farmaco`) REFERENCES `Farmaco`(`id_farmaco`);
-ALTER TABLE `OrdinePeriodico` ADD FOREIGN KEY (`id_farmaco`) REFERENCES `Farmaco`(`id_farmaco`);
-ALTER TABLE `OrdinePeriodico` ADD FOREIGN KEY (`id_farmacia`) REFERENCES `Farmacia`(`id_farmacia`);
+create or replace table ProduzionePeriodica
+(
+    id_farmaco           int not null
+        primary key,
+    quantita             int not null,
+    giorni_scadenza      int not null,
+    giorni_disponibilita int not null,
+    giorni_produzione    int not null,
+    constraint ProduzionePeriodica_ibfk_1
+        foreign key (id_farmaco) references Farmaco (id_farmaco)
+);
+set foreign_key_checks =1;

@@ -1,43 +1,54 @@
-SET FOREIGN_KEY_CHECKS = 0;
-DROP TABLE IF EXISTS `Farmaco`;
-DROP TABLE IF EXISTS `Lotto`;
-DROP TABLE IF EXISTS `Farmacia`;
-DROP TABLE IF EXISTS `Farmacista`;
-SET FOREIGN_KEY_CHECKS = 1;
-
-CREATE TABLE `Farmaco` (
-    `id_farmaco` INTEGER NOT NULL,
-    `nome` VARCHAR NOT NULL,
-    `principio_attivo` VARCHAR NOT NULL,
-    `da_banco` BOOLEAN NOT NULL,
-    PRIMARY KEY (`id_farmaco`)
+set foreign_key_checks  = 0;
+create or replace table Farmacia
+(
+    id_farmacia int          not null
+        primary key,
+    nome        varchar(255) not null,
+    indirizzo   varchar(255) not null
 );
 
-CREATE TABLE `Lotto` (
-    `id_lotto` INTEGER NOT NULL,
-    `id_farmacia` INTEGER NOT NULL,
-    `id_farmaco` INTEGER NOT NULL,
-    `quantità` INTEGER NOT NULL,
-    PRIMARY KEY (`id_lotto`, `id_farmacia`)
+create or replace table Farmacista
+(
+    id_farmacista int auto_increment   not null
+        primary key,
+    id_farmacia   int          not null,
+    nome          varchar(255) not null,
+    cognome       varchar(255) not null,
+    email         varchar(255) not null,
+    password      varchar(255) not null,
+    constraint Farmacista_ibfk_1
+        foreign key (id_farmacia) references Farmacia (id_farmacia)
 );
 
-CREATE TABLE `Farmacia` (
-    `id_farmacia` INTEGER NOT NULL,
-    `nome` VARCHAR NOT NULL,
-    `indirizzo` VARCHAR NOT NULL,
-    PRIMARY KEY (`id_farmacia`)
+create or replace index id_farmacia
+    on Farmacista (id_farmacia);
+
+create or replace table Farmaco
+(
+    id_farmaco       int          not null
+        primary key,
+    nome             varchar(255) not null,
+    principio_attivo varchar(255) not null,
+    da_banco         tinyint(1)   not null
 );
 
-CREATE TABLE `Farmacista` (
-    `id_farmacista` INTEGER NOT NULL,
-    `id_farmacia` INTEGER NOT NULL,
-    `nome` VARCHAR NOT NULL,
-    `cognome` VARCHAR NOT NULL,
-    `email` VARCHAR NOT NULL,
-    `password` VARCHAR NOT NULL,
-    PRIMARY KEY (`id_farmacista`)
+create or replace table Lotto
+(
+    id_lotto    int not null,
+    id_farmacia int not null,
+    id_farmaco  int not null,
+    quantita    int not null,
+    primary key (id_lotto, id_farmacia),
+    constraint Lotto_ibfk_1
+        foreign key (id_farmaco) references Farmaco (id_farmaco),
+    constraint Lotto_ibfk_2
+        foreign key (id_farmacia) references Farmacia (id_farmacia)
 );
 
-ALTER TABLE `Lotto` ADD FOREIGN KEY (`id_farmaco`) REFERENCES `Farmaco`(`id_farmaco`);
-ALTER TABLE `Lotto` ADD FOREIGN KEY (`id_farmacia`) REFERENCES `Farmacia`(`id_farmacia`);
-ALTER TABLE `Farmacista` ADD FOREIGN KEY (`id_farmacia`) REFERENCES `Farmacia`(`id_farmacia`);
+create or replace index id_farmacia
+    on Lotto (id_farmacia);
+
+create or replace index id_farmaco
+    on Lotto (id_farmaco);
+
+set foreign_key_checks  = 1;
