@@ -65,6 +65,7 @@ def rename_pngs(png_path: str):
             is_sequence = len(values) >= 3
 
             prefix = "SD" if is_sequence else "UC"
+            prefix = prefix if "CDCD" not in png else "CD"
             dest_name = f"{prefix} - {use_case}.png"
             dest_path = path.join(macro_use_case_path, dest_name)
             os.rename(path.join(png_path, png), dest_path)
