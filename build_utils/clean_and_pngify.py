@@ -19,7 +19,7 @@ def check_root_path(root_path: str) -> bool:
     if (not path.isdir(root_path)):
         return False
     ls = os.listdir(root_path)
-    if ("svg" not in ls or "png" not in ls or "build_utils" not in ls):
+    if ("svg" not in ls or "png" not in ls or "build_utils" not in ls or "sdd" not in ls):
         return False
     return True
 
@@ -73,6 +73,7 @@ def rename_pngs(png_path: str):
 
 
 def main(root_path: str = typer.Argument(".", help="La cartella principale in cui sono presenti: \"svg/, png/ e build_utils/\""),
+		 model: str = typer.Argument("rad", help="Modello RAD, SDD"),
          cleanup: bool = typer.Option(
              False, "--cleanup", "-c", help="Pulisci le cartelle svg e png e basta")
          ):
@@ -91,7 +92,9 @@ def main(root_path: str = typer.Argument(".", help="La cartella principale in cu
     build_utils = path.join(full_path, "build_utils")
     svg = path.join(full_path, "svg")
     png = path.join(full_path, "png")
-
+    if(model == "sdd"):
+        png = path.join(full_path, "sdd")
+    
     if cleanup:
         typer.secho("Pulendo la cartella svg...")
         # subprocess.run(["rm", "-rf", path.join(svg, "*")], shell=True)
