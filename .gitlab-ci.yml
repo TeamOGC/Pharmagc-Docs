@@ -17,7 +17,7 @@ pages:
   stage: deploy
   script:
     - rm -rf public
-    - cp -r ./html .public
+    - cp -r ./html public
   artifacts:
     paths:
       - public
