@@ -1,0 +1,13 @@
+module:com.ogc.pharmagcode
+com.ogc.pharmagcode
+com.ogc.pharmagcode.Autenticazione.Control
+com.ogc.pharmagcode.Autenticazione.Interface
+com.ogc.pharmagcode.Common
+com.ogc.pharmagcode.Entity
+com.ogc.pharmagcode.GestioneAzienda.Control
+com.ogc.pharmagcode.GestioneAzienda.Interface
+com.ogc.pharmagcode.GestioneConsegna.Control
+com.ogc.pharmagcode.GestioneConsegna.Interface
+com.ogc.pharmagcode.GestioneFarmaci.Control
+com.ogc.pharmagcode.GestioneFarmaci.Interface
+com.ogc.pharmagcode.Utils
